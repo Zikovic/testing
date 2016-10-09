@@ -1,5 +1,3 @@
- #!groovy
-
 stage 'build'
 node{
     checkout scm
@@ -9,5 +7,5 @@ node{
 
 stage 'Test integration'
 node{
-    bat 'integration-test'
+    bat 'mvn integration-test'
 }
