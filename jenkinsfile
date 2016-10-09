@@ -1,7 +1,13 @@
- stage 'Dev'
- node ('windows'){
-  stage 'Build and Test'
-  checkout scm
-  sh 'mvn clean package'
- }
+ #!groovy
 
+stage 'build'
+node{
+    checkout scm
+    bat 'mvn clean install'
+}
+
+
+stage 'Test integration'
+node{
+    bat 'integration-test'
+}
