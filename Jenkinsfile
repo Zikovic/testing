@@ -1,9 +1,12 @@
 stage 'test docker build'
 node{
+    docker.withServer('tcp://192.168.99.101:2376'){
+        docker.image('maven:3-jdk-8').inside('-v /root/.m2:/root/.m2') {
 
-    docker.image('maven:3-jdk-8').inside('-v c:/root/.m2:/root/.m2') {
+         }
 
     }
+
 
 
 }
