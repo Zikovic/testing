@@ -1,7 +1,7 @@
 stage 'test docker build'
 node{
 
-    docker.image('maven:3-jdk-8').inside('-v /.m2:/root/.m2') {
+    docker.image('maven:3-jdk-8').inside('-v c:/root/.m2:/root/.m2') {
 
     }
 
