@@ -1,11 +1,11 @@
 stage 'build'
 node{
     checkout scm
-    bat 'mvn clean install'
+    bat 'C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.6\plugins\maven\lib\maven3\bin\mvn clean install'
 }
 
 
 stage 'Test integration'
 node{
-    bat 'mvn integration-test'
+    bat 'C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.6\plugins\maven\lib\maven3\bin\mvn integration-test'
 }
