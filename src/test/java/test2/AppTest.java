@@ -12,7 +12,7 @@ import service.ServiceTest2;
  * Unit test for simple App.
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.DEFINED_PORT, classes = App.class, properties = {"server.port=9002"})
+@SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.DEFINED_PORT, classes = App.class)
 public class AppTest{
 
     @Autowired
