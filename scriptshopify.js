@@ -1,1 +1,1 @@
-alert("hello script tags');
+alert("hello script tags");
